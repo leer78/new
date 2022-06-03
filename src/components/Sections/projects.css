@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Open+Sans:wght@300&display=swap');
+.projectsContainer{
+    /* background-color: blue; */
+    margin: 15px;
+    width: 60%;
+    color: lightgrey;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 15px;
+}
+
+.box{
+    background-color: rgb(99, 95, 87);
+    height: 220px;
+    /* width: 200px; */
+    border-radius: 3px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+}
+
+.box:hover{
+    top: -10px;
+}
+.box:hover h3{
+    color: white;
+}
+
+
+.box a{
+    position: relative;
+    left: 80%;
+    top: -18%;
+}
+
+.box a:hover{
+    color: white;
+}
+
+.box h3{
+    margin-left: 5%;
+    margin-top: -25%;
+    font-weight: 900;
+}
+
+.box p{
+    margin-left: 5%;
+    margin-top: 15%;
+    font-size: smaller;
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+.box ul{
+    list-style-type: none;
+    position: absolute;
+    left: 1vw;
+    /* top: 1vw; */
+    margin-top: 3%;
+    bottom: 2%;
+    width: 100%;
+}
+
+.box li{
+    display: inline-block;
+    margin-right: 5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Note{
+    position: relative;
+    /* justify-content: center; */
+    margin:auto;
+    width: 50%;
+    top: 10%;
+}
