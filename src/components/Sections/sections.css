@@ -47,7 +47,7 @@
 
 #Experiences{
     /* background-color: #ffefcc; */
-    background-color: lightgray;
+    background-color: #C0C0C0;
     /* height: 220vh; */
 }
 
@@ -67,6 +67,9 @@
     /* height: 40vh; */
 }
 
+#ImageCompare{
+    background-color: orange;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -86,6 +89,7 @@
     #skills{
         height:100%;
     }
+
     h5{
         margin-left:5%;
         margin-right:5%;

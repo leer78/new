@@ -73,14 +73,6 @@
 
 
 
-
-
-
-
-
-
-
-
 .ProjectContainer h4{
     color: black;
     font-weight: bold;
@@ -102,7 +94,7 @@
 }
 .ProjectImageContainer img{
     width: auto;
-    height: 200px;
+    height: 150px;
 }
 
 .ProjectImageContainer figure{

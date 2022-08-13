@@ -6,6 +6,7 @@ import './skills.css';
 import './contact.css';
 import './projects.css';
 
+
 import { Link } from "react-router-dom";
 import { GoLocation } from 'react-icons/go';
 import {BiLink} from 'react-icons/bi'
@@ -61,6 +62,81 @@ const Section = () => {
                 {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> */}
             </div>
 
+        {/* PROJECTS======================================== */}
+                        <div className='SectionContainer' id="Projects">
+                <h1>Projects</h1>
+                <h5>“I don’t spend my time pontificating about high-concept things; I spend my time solving engineering and manufacturing problems.” - Elon Musk</h5>
+                <hr></hr>
+                <div className = 'projectsContainer'>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/page1" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Macro Keypad</h3>
+                        <p>A macro keypad with several 3x3 keyswitch buttons. Made of 3D printed parts and an Arduino Pro Micro</p>
+                        <ul>
+                            <li>C++</li>
+                            <li>CAD</li>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/page2" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>RPi Controlled LED Strip</h3>
+                        <p> Base LED controlled system that would allow me to proceed with other projects. Comprised of a Raspberry Pi 4, LED light strips, and MOSFETs</p>
+                        <ul>
+                            <li>Python</li>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/page3" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>LoRa Radio Multi Purpose Device</h3>
+                        <p>Fully functional radio setup using Arduino Uno, Nano, and LoRa that allows me to proceed with other "wireless" connection projects</p>
+                        <ul>
+                            <li>C++</li>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/page4" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Shock or Study Bracelet</h3>
+                        <p>Engineering 4 the Future 'hackathon' entry featuring shock watch to promote better study habits. Placed 1st overall.</p>
+                        <ul>
+                            <li>CAD</li>
+                            <li>C++</li>
+                            <li>C</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/page5" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Solar Explorer Program Game</h3>
+                        <p>A fun, yet educational space themed game that allows users to  grasp the scale of our Solar System with "1 pixel = size of the moon"</p>
+                        <ul>
+                            <li>Java</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/page6" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Sequential Logic Digital Design Project</h3>
+                        <p>A digital circuit using numerous logic gates to continiously output a number on a 7 segment display </p>
+                        <ul>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
+
+                    
+                </div>
+                <div className='Note'>
+                    But thats not all.. these were just some of the main projects I'd like to highlight.
+                    <a href ='https://github.com/leer78'> I have many more projects that I've completed here at my GitHub!</a>
+                </div>
+            </div>
+
             {/* EXPERIENCES================================ */}
             <div className='SectionContainer' id="Experiences">
                 <h1>Experiences</h1>
@@ -74,6 +150,7 @@ const Section = () => {
                             <div className='left-column'>
                                 <h2 id="school">McMaster University</h2>
                                 <h3 >09/2020 - 05/2025 </h3>
+                                <figure><img src='/images/McMasterLogo.png' alt=''/></figure>
                             </div>
                         </div>
 
@@ -113,22 +190,23 @@ const Section = () => {
                         <div className='column'>
                             <div className='left-column'>
                                 <h2 id="school">Independant Electricity System Operator (IESO)</h2>
-                                <h3 >04/2022 - present </h3>
+                                <h3 >04/2022 - 09/2022 </h3>
+                                <figure><img src='/images/iesologo.png' alt=''/></figure>
                             </div>
                         </div>
 
                         <div className='column'>
                             <div className='right-column'>
                                 <h2 id="degree">Information and Technology Services Student</h2>
-                                <p>Currently working with the IT&S department to accomplish a broad range of technical tasks. I've had many situations to grow my communication, teamwork, and initiative skills.</p>
+                                <p>Worked with the Corperate Technology Sysems department to accomplish a broad range of technical tasks. I had many opporunities to grow my communication, collaboration, and initiative skills.</p>
                                 <div className = 'experienceList'>
-                                    <p>So far, I've been:</p>
+                                    <p>Accomplished duties include:</p>
                                     <ul>
-                                        <li>Managing hundreds of Microsoft and Linux servers through installations, health checks, and investigations</li>
-                                        <li>Automating tasks through Bash and Powershell scripting</li>
-                                        <li>Solving redundancy issues throughout the IT&S process</li>
+                                        <li>Aligned database of 500+ servers through scripts and high precision checks, noted trends and found optimizations</li>
+                                        <li>Managed hundreds of Microsoft and Linux servers through installations, patches, health checks, and investigations</li>
+                                        <li>Automated tasks through Bash and PowerShell scripting with a focus on frequent updates, task schedulers, and audit reports  </li>
                                         <li>Researching ideal enterprise software through outreach and discussing with consultants</li>
-                                        <li>Learning about Ontario's energy market in its entirety</li>
+                                        <li>Learned about Ontario's energy market in its entirety</li>
                                     </ul>
                                 </div>
                                 <div className = 'greenTag'>
@@ -143,6 +221,7 @@ const Section = () => {
                             <div className='left-column'>
                                 <h2 id="school">Canadian Imperial Bank <br></br>of Commerce (CIBC)</h2>
                                 <h3 >04/2021 - 9/2021 </h3>
+                                <figure><img src='/images/cibclogo.png' alt=''/></figure>
                             </div>
                         </div>
 
@@ -179,6 +258,7 @@ const Section = () => {
                             <div className='left-column'>
                                 <h2 id="school">Mac Rocketry Team</h2>
                                 <h3 >09/2020 - 02/2022 </h3>
+                                <figure><img src='/images/macrocketrylogo.png' alt=''/></figure>
                             </div>
                         </div>
 
@@ -190,11 +270,10 @@ const Section = () => {
                                 <div className = "experienceList" >
                                     <p>Tasks accomplished were:</p>
                                     <ul>
-                                        <li> Working with the ground controls sub team to develop a functional team website along with developing back end features such as member login (Viewable at http://macrocketry.ca) </li>
-                                        <li> Utilising HTML, CSS, and chart.js to visualize and present flight censor data</li>
+                                        <li>Worked with the ground controls to develop a functional team website along with back-end features such as member login(Viewable at http://macrocketry.ca) </li>
+                                        <li>Utilized HTML, CSS, React, Flask and chart.js to visualize and present flight censor data</li>
                                         <li>Leveraged LoRa and Arduino devices to develop a versatile transceiver and receiver system to transfer data on a wide scale</li>
-                                        <li>Analysed flight data and trajectories, using calculations and algorithms to convert existing data into additional information</li>
-                                        <li>Developed a rocket propulsion testing system using DAQ load cells and LabView</li>
+                                        <li>Analyzed flight data and trajectories using calculations and algorithms to convert existing data into additional information</li>
                                     </ul>
                                 </div>
                                 
@@ -209,7 +288,8 @@ const Section = () => {
                         <div className='column'>
                             <div className='left-column'>
                                 <h2 id="school">McMaster Undegraduate Academic Astronomy <br></br>Club (MUAAC) </h2>
-                                <h3 >09/2020 - present </h3>
+                                <h3 >09/2020 - 07/2022 </h3>
+                                {/* <figure><img src='/images/McMasterLogo.png' alt=''/></figure> */}
                             </div>
                         </div>
 
@@ -219,10 +299,10 @@ const Section = () => {
                                 <p>A student group dedicated to the study and appreciation of our universe.</p>
                                 
                                 <div className = "experienceList" >
-                                    <p>Promoting engagement through:</p>
+                                    <p>Promoted engagement through:</p>
                                     <ul>
-                                        <li> Generated excitement and interest within the first year community as the club’s first year representative</li>
-                                        <li>Substantial experience in recordkeeping and accounting tasks as president of finance</li>
+                                        <li>Generated excitement and interest within the first year community as the club’s first year representative</li>
+                                        <li>Substantial experience in recordkeeping and accounting tasks as vice president of finance</li>
                                     </ul>
                                 </div>
                                 
@@ -307,16 +387,27 @@ const Section = () => {
                                         <div className='skillPowershell'> &nbsp;</div>
                                     </div>
                                 </li>
+                                <li>Excel
+                                    <div className='barContainer'>
+                                        <div className='skillExcel'> &nbsp;</div>
+                                    </div>
+                                </li>
+                                <li>Word
+                                    <div className='barContainer'>
+                                        <div className='skillWord'> &nbsp;</div>
+                                    </div>
+                                </li>
+                                <li>PowerPoint
+                                    <div className='barContainer'>
+                                        <div className='skillPowerPoint'> &nbsp;</div>
+                                    </div>
+                                </li>
                                 <li>Jira
                                     <div className='barContainer'>
                                         <div className='skillJira'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Azure
-                                    <div className='barContainer'>
-                                        <div className='skillAzure'> &nbsp;</div>
-                                    </div>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -400,81 +491,6 @@ const Section = () => {
 
                 {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> */}
             </div>
-        
-            {/* PROJECTS======================================== */}
-            <div className='SectionContainer' id="Projects">
-                <h1>Projects</h1>
-                <h5>“I don’t spend my time pontificating about high-concept things; I spend my time solving engineering and manufacturing problems.” - Elon Musk</h5>
-                <hr></hr>
-                <div className = 'projectsContainer'>
-                    <div className = 'box'>
-                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page1" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
-                        <h3>Macro Keypad</h3>
-                        <p>A macro keypad with several 3x3 keyswitch buttons. Made of 3D printed parts and an Arduino Pro Micro</p>
-                        <ul>
-                            <li>C++</li>
-                            <li>CAD</li>
-                            <li>Circuitry</li>
-                        </ul> 
-                    </div>
-                    <div className = 'box'>
-                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page2" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
-                        <h3>RPi Controlled LED Strip</h3>
-                        <p> Base LED controlled system that would allow me to proceed with other projects. Comprised of a Raspberry Pi 4, LED light strips, and MOSFETs</p>
-                        <ul>
-                            <li>Python</li>
-                            <li>Circuitry</li>
-                        </ul> 
-                    </div>
-                    <div className = 'box'>
-                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page3" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
-                        <h3>LoRa Radio Multi Purpose Device</h3>
-                        <p>Fully functional radio setup using Arduino Uno, Nano, and LoRa that allows me to proceed with other "wireless" connection projects</p>
-                        <ul>
-                            <li>C++</li>
-                            <li>Circuitry</li>
-                        </ul> 
-                    </div>
-                    <div className = 'box'>
-                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page4" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
-                        <h3>Shock or Study Bracelet</h3>
-                        <p>Engineering 4 the Future 'hackathon' entry featuring shock watch to promote better study habits. Placed 1st overall.</p>
-                        <ul>
-                            <li>CAD</li>
-                            <li>C++</li>
-                            <li>C</li>
-                        </ul> 
-                    </div>
-                    <div className = 'box'>
-                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page5" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
-                        <h3>Solar Explorer Program Game</h3>
-                        <p>A fun, yet educational space themed game that allows users to  grasp the scale of our Solar System with "1 pixel = size of the moon"</p>
-                        <ul>
-                            <li>Java</li>
-                        </ul> 
-                    </div>
-                    <div className = 'box'>
-                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page6" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
-                        <h3>Sequential Logic Digital Design Project</h3>
-                        <p>A digital circuit using numerous logic gates to continiously output a number on a 7 segment display </p>
-                        <ul>
-                            <li>Circuitry</li>
-                        </ul> 
-                    </div>
-
-                    
-                </div>
-                <div className='Note'>
-                    But thats not all.. these were just some of the main projects I'd like to highlight.
-                    <a href ='https://github.com/leer78'> I have many more projects that I've completed here at my GitHub!</a>
-                </div>
-            </div>
 
 
             {/* CONTACT======================================== */}
@@ -487,7 +503,7 @@ const Section = () => {
                     <div className='contactColumn'>
                         <div className='contactLeft'>
                             <ul>
-                                <li><SiLinkedin />&nbsp;&nbsp; https://www.linkedin.com/in/leer78/ </li>
+                                <li><SiLinkedin />&nbsp;&nbsp; linkedin.com/leer78 </li>
                                 <li><AiOutlinePhone /> &nbsp;&nbsp; 647 466 7142 </li>
                             </ul>
                         </div>
@@ -496,7 +512,7 @@ const Section = () => {
                         <div className=' contactRight'>
                             <ul>
                                 <li><MdEmail /> &nbsp; &nbsp;rlee20744@gmail.com </li>
-                                <li><AiFillGithub />&nbsp;&nbsp; https://github.com/leer78</li>
+                                <li><AiFillGithub />&nbsp;&nbsp; github.com/leer78</li>
                             </ul>
                         </div>
                     </div>

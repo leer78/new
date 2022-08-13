@@ -96,7 +96,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 863px) {
 
    
     .profilePicture{
@@ -126,7 +126,7 @@
     
 
 }
-@media screen and (max-width: 1300px) and (min-width: 768px) {
+@media screen and (max-width: 1300px) and (min-width: 863px) {
     .lastSec{
       display: none;
     }

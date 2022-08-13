@@ -1,3 +1,3 @@
-const sections = ["Home","Profile","Experiences","Skills","Projects"];
+const sections = ["Home","Profile","Projects","Experiences","Skills"];
 
 export default sections;
