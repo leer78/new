@@ -17,7 +17,7 @@ const page5 = () =>{
             <div className = "buttons">
                 <Link to="/page4" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
                 <Link to="/" id = 'button'><AiOutlineHome size = {20} color = 'black'/></Link>
-                <Link to="/page1" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
+                <Link to="/page6" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
             </div>
         </div>
         <div className="ProjectContainer">

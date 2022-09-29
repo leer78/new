@@ -128,6 +128,26 @@ const Section = () => {
                             <li>Circuitry</li>
                         </ul> 
                     </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/page7" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Stepper Motor Controller</h3>
+                        <p>Controlled a stepper motor with ability to change step size, direction, and speed. Includes STM32 UI and user controls.</p>
+                        <ul>
+                            <li>C++</li>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/page8" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>PWM Thermal Sensor Fan Controller </h3>
+                        <p>A pulse-width modulation fan that operates based on temperature of a digital thermometer. Includes STM32 UI and user controls.</p>
+                        <ul>
+                            <li>C++</li>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
 
                     
                 </div>
@@ -170,6 +190,10 @@ const Section = () => {
                                         <li>ENGPHYS 2A04 || Electricity and Magnetism </li>
                                         <li>MECHTRON 2MD3 || Data Structures and Algorithms</li>
                                         <li>MECHTRON 2TA4 || Embedded Systems Design </li>
+                                        <li>ENGPHYS 2NE3 || Thermal Systems Design </li>
+                                        <li>MECHTRON 3K04 || Software Development </li>
+                                        <li>MECHTRON 3MX3 || Signals and Systems </li>
+
                                     </ul>
                                 </div>
                                 
@@ -203,9 +227,9 @@ const Section = () => {
                                     <p>Accomplished duties include:</p>
                                     <ul>
                                         <li>Aligned database of 500+ servers through scripts and high precision checks, noted trends and found optimizations</li>
-                                        <li>Managed hundreds of Microsoft and Linux servers through installations, patches, health checks, and investigations</li>
-                                        <li>Automated tasks through Bash and PowerShell scripting with a focus on frequent updates, task schedulers, and audit reports  </li>
-                                        <li>Researching ideal enterprise software through outreach and discussing with consultants</li>
+                                        <li>Managed 450 Microsoft and Linux servers through installations, patches, health checks, and investigations</li>
+                                        <li>Automated tasks through Bash and PowerShell scripting with a focus on frequent updates, task schedulers, and audit reports </li>
+                                        <li>Researched enterprise software through vendor outreach leading to company wide advanced endpoint protection purchase</li>
                                         <li>Learned about Ontario's energy market in its entirety</li>
                                     </ul>
                                 </div>
@@ -233,11 +257,12 @@ const Section = () => {
                                     <p>Accomplished duties include:</p>
                                     <ul>
                                         <li>Investigated and worked alongside the CIBC Infrastructure Operations team to tackle a variety of technical problems</li>
+                                        <li>Aided team in transition to Microsoft Azure resources with a focus on presenting vendor change releases and firewall integration</li>
                                         <li>Worked to utilise Ansible and Git to deploy network related applications, saving company resources </li>
-                                        <li> Implement autonomous processes to reduce the manual efforts and redundant tasks associated with technology infrastructure</li>
+                                        <li>Implement autonomous processes to reduce the manual efforts and redundant tasks associated with technology infrastructure</li>
                                         <li>Upheld security protocols in my actions whilst ensuring that all my actions and undertakings were held to a high standard </li>
-                                        <li> Lead daily stand-up meetings to document and organize key agenda items. Reduced agenda discussion times by 50%</li>
-                                        <li>Devised an incident ticket tracker to record overnight pages and investigate key findings for reducing queue volume </li>
+                                        <li>Lead daily stand-up meetings to document and organize key agenda items. Reduced agenda discussion times by 50%</li>
+                                        <li>Devised an incident ticket tracker to record overnight pages and investigate key findings for reducing queue volume 3-fold</li>
                                     </ul>
                                 </div>
                                 
@@ -313,9 +338,6 @@ const Section = () => {
                         </div>
                     </div>
                 </div>
-
-
-            {/* SKILLS======================================================== */}
             </div>
 
              {/* SKILLS================================ */}
@@ -344,7 +366,7 @@ const Section = () => {
                                         <div className='skillReact'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>C
+                                <li>C/C++
                                     <div className='barContainer'>
                                         <div className='skillC'> &nbsp;</div>
                                     </div>
@@ -354,9 +376,9 @@ const Section = () => {
                                         <div className='skillPython'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>C++
+                                <li>MATLAB
                                     <div className='barContainer'>
-                                        <div className='skillCpp'> &nbsp;</div>
+                                        <div className='skillMatlab'> &nbsp;</div>
                                     </div>
                                 </li>
                                 <li>Java
@@ -402,9 +424,9 @@ const Section = () => {
                                         <div className='skillPowerPoint'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Jira
+                                <li>Azure
                                     <div className='barContainer'>
-                                        <div className='skillJira'> &nbsp;</div>
+                                        <div className='skillAzure'> &nbsp;</div>
                                     </div>
                                 </li>
                                 

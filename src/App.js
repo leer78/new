@@ -9,6 +9,9 @@ import Page3 from "./components/ProjectPage/project3/page3";
 import Page4 from "./components/ProjectPage/project4/page4";
 import Page5 from "./components/ProjectPage/project5/page5";
 import Page6 from "./components/ProjectPage/project6/page6";
+import Page7 from "./components/ProjectPage/project7/page7";
+import Page8 from "./components/ProjectPage/project8/page8";
+
 
 
 import ScrollToTop from "./components/ScrollToTop";
@@ -17,6 +20,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
+     
     return (
       <Router>
           <div className="App">
@@ -72,6 +76,18 @@ class App extends Component {
                               <Page6 />
                            </Fragment>
                       }> </Route>
+                      <Route path="/page7" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <Page7 />
+                           </Fragment>
+                      }> </Route>
+                      <Route path="/page8" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <Page8 />
+                           </Fragment>
+                      }> </Route>
         
                   </Routes>
               
@@ -81,5 +97,6 @@ class App extends Component {
      
     );
   }
+  
 }
 export default App;

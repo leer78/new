@@ -8,7 +8,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 import { AiOutlineHome } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
 
-const page5 = () =>{
+const page6 = () =>{
     return(
         <>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
@@ -17,12 +17,12 @@ const page5 = () =>{
             <div className = "buttons">
                 <Link to="/page5" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
                 <Link to="/" id = 'button'><AiOutlineHome size = {20} color = 'black'/></Link>
-                <Link to="/page1" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
+                <Link to="/page7" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
             </div>
         </div>
         <div className="ProjectContainer">
             <h1>Sequential Logic Digital Design Project</h1>
-            <h2>2E04: Digital Circuits  <a href = "https://github.com/leer78/Solar-Explorer-Program" target="_blank" id = 'externalLinkIconGithub'><AiFillGithub size = {25} color = 'rgb(16, 175, 159)'/></a></h2>
+            <h2>2E04: Digital Circuits </h2>
            
             <h3>2021</h3>
 
@@ -58,4 +58,4 @@ const page5 = () =>{
 };
 
 
-export default page5;
+export default page6;
