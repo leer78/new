@@ -37,7 +37,7 @@
 .right-column p {
   position: relative;
   top: 5%;
-  /* margin-bottom: 10%; */
+  padding-bottom: 2px;
 }
 
 .experienceList{

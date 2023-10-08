@@ -95,6 +95,27 @@
     font-weight: bold;
 }
 
+.resumeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resumeLink a {
+
+    display: flex;
+    padding: 10px 20px;
+    background-color: rgb(16, 175, 159);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .resumeLink a:hover {
+    background-color: rgb(10, 126, 114);
+  }
+    
+
 
 @media screen and (max-width: 863px) {
 

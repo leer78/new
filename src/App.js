@@ -3,14 +3,18 @@ import Navbar from "./components/Navbar/Navbar";
 import Section from "./components/Sections/Section";
 import LandingPage from "./components/LandingPage/landingpage";
 import ParticleBackground from "./components/particleBackground";
-import Page1 from "./components/ProjectPage/project1/page1";
-import Page2 from "./components/ProjectPage/project2/page2";
-import Page3 from "./components/ProjectPage/project3/page3";
-import Page4 from "./components/ProjectPage/project4/page4";
-import Page5 from "./components/ProjectPage/project5/page5";
-import Page6 from "./components/ProjectPage/project6/page6";
-import Page7 from "./components/ProjectPage/project7/page7";
-import Page8 from "./components/ProjectPage/project8/page8";
+import MK from "./components/ProjectPage/MK/page";
+import RCLP from "./components/ProjectPage/RCLP/page";
+import LRMPD from "./components/ProjectPage/LRMPD/page";
+import SSB from "./components/ProjectPage/SSB/page";
+import SEP from "./components/ProjectPage/SEP/page";
+import SLDDP from "./components/ProjectPage/SLDDP/page";
+import SMC from "./components/ProjectPage/SMC/page";
+import PTSFC from "./components/ProjectPage/PTSFC/page";
+import IM from "./components/ProjectPage/IM/page";
+import WL from "./components/ProjectPage/WL/page";
+import SGSC from "./components/ProjectPage/SGSC/page";
+import RA from "./components/ProjectPage/RA/page";
 
 
 
@@ -24,8 +28,6 @@ class App extends Component {
     return (
       <Router>
           <div className="App">
-                  
-                 
                   {/* <LandingPage/> */}
                
                   <Routes>
@@ -40,52 +42,76 @@ class App extends Component {
                     }/>
                     
                  
-                      <Route path="/page1" element= {
+                      <Route path="/MacroKeypad" element= {
                            <Fragment>
                               <ScrollToTop/>
-                              <Page1 />
+                              <MK />
                            </Fragment>
                       }> </Route>
-                      <Route path="/page2" element= {
+                      <Route path="/RPiControlledLEDStrip" element= {
                            <Fragment>
                               <ScrollToTop/>
-                              <Page2 />
+                              <RCLP />
                            </Fragment>
                       }> </Route>
-                      <Route path="/page3" element= {
+                      <Route path="/LoRaRadioMultiPurposeDevice" element= {
                            <Fragment>
                               <ScrollToTop/>
-                              <Page3 />
+                              <LRMPD />
                            </Fragment>
                       }> </Route>
-                      <Route path="/page4" element= {
+                      <Route path="/ShockOrStudyBracelet" element= {
                            <Fragment>
                               <ScrollToTop/>
-                              <Page4 />
+                              <SSB />
                            </Fragment>
                       }> </Route>
-                      <Route path="/page5" element= {
+                      <Route path="/SequentialLogicDigitalDesignProject" element= {
                            <Fragment>
                               <ScrollToTop/>
-                              <Page5 />
+                              <SLDDP />
                            </Fragment>
                       }> </Route>
-                      <Route path="/page6" element= {
+                      <Route path="/StepperMotorController" element= {
                            <Fragment>
                               <ScrollToTop/>
-                              <Page6 />
+                              <SMC />
                            </Fragment>
                       }> </Route>
-                      <Route path="/page7" element= {
+                      <Route path="/PWMThermalSensorFanController" element= {
                            <Fragment>
                               <ScrollToTop/>
-                              <Page7 />
+                              <PTSFC />
                            </Fragment>
                       }> </Route>
-                      <Route path="/page8" element= {
+                      <Route path="/SolarExplorerProgram" element= {
                            <Fragment>
                               <ScrollToTop/>
-                              <Page8 />
+                              <SEP />
+                           </Fragment>
+                      }> </Route>
+                      <Route path="/IronmanHelmet" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <IM />
+                           </Fragment>
+                      }> </Route>
+                      <Route path="/WordLimitButton" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <WL />
+                           </Fragment>
+                      }> </Route>
+                      <Route path="/StrainGaugeSteeringColumn" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <SGSC />
+                           </Fragment>
+                      }> </Route>
+                      <Route path="/RoboticArm+HapticGlove" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <RA />
                            </Fragment>
                       }> </Route>
         

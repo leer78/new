@@ -32,7 +32,7 @@ const Section = () => {
                     <div className='profileColumn'>
                         <div className='profileLeft'>
                             <h2>About me</h2>
-                            <p>Hi there! I'm Ryan and this is the personal portfolio site that I made by hand using React. Here, I plan to highlight my experiences and convey my interests.</p>
+                            <p>Hi there! I'm Ryan and this is the personal portfolio site. I'm using it to share some of the personal projects I've worked on tying academic teachings and practical experiences together. </p>
                             <p>An aspiring engineering student with a fascination for technology and software development. I believe that the there is limitless potential in the field and would allow for me to contribute in the progression of mankind.</p>
                             <div className='lastSec'>
                                 <p>Ever since I was younger, I've always been building things and tinkering with the inner workings of technology. I realize now that to my younger self, what I've learned in engineering would've looked like magic. And that's what keeps me interested!</p>
@@ -53,8 +53,15 @@ const Section = () => {
                             <h3>Area of Study</h3>
                             <p>Mechatronics Engineering</p>
                             <h3>Interests</h3>
-                            <p>Space, Computation, Automation, and Design</p>
+                            <p>Robotics, Space, Computation, Automation, and Design</p>
+                            <h3>Hobbies</h3>
+                            <p>Climbing/Bouldering, Hockey, Football, Listening To Music, Astrophotgraphy</p>
                         </div>
+                    </div>
+                </div>
+                <div className = 'resumeContainer'>
+                    <div class="resumeLink">
+                        <a href="RyanLee_Resume.pdf" target="_blank">Click here to view my resume</a>
                     </div>
                 </div>
 
@@ -63,17 +70,35 @@ const Section = () => {
             </div>
 
         {/* PROJECTS======================================== */}
-                        <div className='SectionContainer' id="Projects">
+        <div className='SectionContainer' id="Projects">
                 <h1>Projects</h1>
                 <h5>“I don’t spend my time pontificating about high-concept things; I spend my time solving engineering and manufacturing problems.” - Elon Musk</h5>
                 <hr></hr>
+                <div className = 'featuredProjectContainer'>
+                    <div className = 'featuredProject'>
+                        <div className = 'featuredImage'>
+                            <img src="images/robotArm.jpg" alt="Featured Project"></img>
+                        </div>
+                        <div className = 'featuredDescription'>
+                            <h1>Featured Project</h1>
+                            <h2>Controllable Robotic Arm + Haptic Glove</h2>
+                            <p>A robotic arm with fingers controlled via a haptic glove that I designed.</p>
+                            <p>This passion project gave me a proper insight into the full project development cycle including protoyping, testing, tuning, and manufacturing.</p>
+                            <p>The fingers clench using a fishing line controlled by servo motors, resisted by rubber strings. The haptic glove uses a potentiometer + coiled springs to measure the movement in fingers, which is then mimicked in the respective fingers. </p>
+                            <a href="/RoboticArm+HapticGlove">Learn More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
                 <div className = 'projectsContainer'>
                     <div className = 'box'>
                         <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page1" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <Link to="/MacroKeypad" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
                         <h3>Macro Keypad</h3>
                         <p>A macro keypad with several 3x3 keyswitch buttons. Made of 3D printed parts and an Arduino Pro Micro</p>
                         <ul>
+                            <li>2021</li>
                             <li>C++</li>
                             <li>CAD</li>
                             <li>Circuitry</li>
@@ -81,30 +106,75 @@ const Section = () => {
                     </div>
                     <div className = 'box'>
                         <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page2" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <Link to="/IronmanHelmet" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Ironman Helmet </h3>
+                        <p>A 3D printed Ironman Helmet with open/close capabilities and LED lights</p>
+                        <ul>
+                            <li>2023</li>
+                            <li>3D Printing</li>
+                            <li>C++</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/StrainGaugeSteeringColumn" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Strain Gauge Steering Column</h3>
+                        <p>A strain gauge system used to measure axial forces on our Baja Racing steering column</p>
+                        <ul>
+                            <li>2023</li>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/WordLimitButton" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Word Limit Button</h3>
+                        <p>A Staples 'That was easy' button replica that emits an irritating high pitched noise when someone won't stop talking! </p>
+                        <ul>
+                            <li>2023</li>
+                            <li>CAD</li>
+                            <li>3D Printing</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/SequentialLogicDigitalDesignProject" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Sequential Logic Digital Design Project</h3>
+                        <p>A digital circuit using numerous logic gates to continiously output a number on a 7 segment display </p>
+                        <ul>
+                            <li>2021</li>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/RPiControlledLEDStrip" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
                         <h3>RPi Controlled LED Strip</h3>
                         <p> Base LED controlled system that would allow me to proceed with other projects. Comprised of a Raspberry Pi 4, LED light strips, and MOSFETs</p>
                         <ul>
+                            <li>2022</li>
                             <li>Python</li>
                             <li>Circuitry</li>
                         </ul> 
                     </div>
                     <div className = 'box'>
                         <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page3" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <Link to="/LoRaRadioMultiPurposeDevice" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
                         <h3>LoRa Radio Multi Purpose Device</h3>
                         <p>Fully functional radio setup using Arduino Uno, Nano, and LoRa that allows me to proceed with other "wireless" connection projects</p>
                         <ul>
+                            <li>2021</li>
                             <li>C++</li>
                             <li>Circuitry</li>
                         </ul> 
                     </div>
                     <div className = 'box'>
                         <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page4" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <Link to="/ShockOrStudyBracelet" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
                         <h3>Shock or Study Bracelet</h3>
                         <p>Engineering 4 the Future 'hackathon' entry featuring shock watch to promote better study habits. Placed 1st overall.</p>
                         <ul>
+                            <li>2022</li>
                             <li>CAD</li>
                             <li>C++</li>
                             <li>C</li>
@@ -112,40 +182,34 @@ const Section = () => {
                     </div>
                     <div className = 'box'>
                         <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page5" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
-                        <h3>Solar Explorer Program Game</h3>
-                        <p>A fun, yet educational space themed game that allows users to  grasp the scale of our Solar System with "1 pixel = size of the moon"</p>
-                        <ul>
-                            <li>Java</li>
-                        </ul> 
-                    </div>
-                    <div className = 'box'>
-                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page6" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
-                        <h3>Sequential Logic Digital Design Project</h3>
-                        <p>A digital circuit using numerous logic gates to continiously output a number on a 7 segment display </p>
-                        <ul>
-                            <li>Circuitry</li>
-                        </ul> 
-                    </div>
-                    <div className = 'box'>
-                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page7" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <Link to="/StepperMotorController" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
                         <h3>Stepper Motor Controller</h3>
                         <p>Controlled a stepper motor with ability to change step size, direction, and speed. Includes STM32 UI and user controls.</p>
                         <ul>
+                            <li>2022</li>
                             <li>C++</li>
                             <li>Circuitry</li>
                         </ul> 
                     </div>
                     <div className = 'box'>
                         <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
-                        <Link to="/page8" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <Link to="/PWMThermalSensorFanController" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
                         <h3>PWM Thermal Sensor Fan Controller </h3>
                         <p>A pulse-width modulation fan that operates based on temperature of a digital thermometer. Includes STM32 UI and user controls.</p>
                         <ul>
+                            <li>2022</li>
                             <li>C++</li>
                             <li>Circuitry</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/SolarExplorerProgram" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Solar Explorer Program Game</h3>
+                        <p>A fun, yet educational space themed game that allows users to  grasp the scale of our Solar System with "1 pixel = size of the moon"</p>
+                        <ul>
+                            <li>2020</li>
+                            <li>Java</li>
                         </ul> 
                     </div>
 
@@ -193,6 +257,9 @@ const Section = () => {
                                         <li>ENGPHYS 2NE3 || Thermal Systems Design </li>
                                         <li>MECHTRON 3K04 || Software Development </li>
                                         <li>MECHTRON 3MX3 || Signals and Systems </li>
+                                        <li>MECHTRON 3DX4 || Dynamic Models and Control Physical Systems </li>
+                                        <li>MECHTRON 3TB4 || Embedded Systems Design II </li>
+                                        <li>SFWRENG 3SH3 || Operating Systems </li>
 
                                     </ul>
                                 </div>
@@ -209,8 +276,39 @@ const Section = () => {
                 <div className='row'>
                     <hr />
                     <h2 id="experienceTitle">Work Experience</h2>
+                    <div id='individualExperiences'>
+                        
+                        <div className='column'>
+                            <div className='left-column'>
+                                <h2 id="school">Advanced Micro Devices (AMD)</h2>
+                                <h3 >04/2023 - Present </h3>
+                                <figure><img src='/images/amdlogo.png' alt=''/></figure>
+                            </div>
+                        </div>
+
+                        <div className='column'>
+                            <div className='right-column'>
+                                <h2 id="degree">Graphics Memory Hub Verification Engineering Intern</h2>
+                                <p>Managed various aspects of the pre-silicon regression testing process. Worked with 7+ teams to set up and run regressions while triaging test results to identify failed signatures.</p>
+                                <div className = 'experienceList'>
+                                    <p>Accomplished duties include:</p>
+                                    <ul>
+                                        <li>Managed 70+ regressions for 7+ IP teams for memory hub team through triaging test results and optimizing cases</li>
+                                        <li>Improved efficiency of regression verification process through data displays, code coverage reports, and run logs</li>
+                                        <li>Programmed scripts related to test logs, visual displays, and general regression flows using Ruby, Perl, and C++</li>
+                                        <li>Investigated test outputs by means of timing diagram verification, Verilog code analysis, and scripting triage programs</li>
+                                        <li>Continously learning and exploring the various steps associated in the chip design process</li>
+                                    </ul>
+                                </div>
+                                <div className = 'greenTag'>
+                                    <a href = 'https://www.amd.com/en.html' target ='_blank' id='location'><GoLocation /> Markham, Ontario &nbsp;&nbsp; || &nbsp;&nbsp;<BiLink size = {20}/> amd.com </a>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
 
                     <div id='individualExperiences'>
+                        
                         <div className='column'>
                             <div className='left-column'>
                                 <h2 id="school">Independant Electricity System Operator (IESO)</h2>
@@ -277,6 +375,37 @@ const Section = () => {
                 <div className='row'>
                     <hr />
                     <h2 id="experienceTitle">Extracurricular Activities</h2>
+                    <div id='individualExperiences'>
+                        <div className='column'>
+                            <div className='left-column'>
+                                <h2 id="school">McMaster Baja Racing</h2>
+                                <h3 >09/2023 - Present </h3>
+                                <figure><img src='/images/bajalogo.png' alt=''/></figure>
+                            </div>
+                        </div>
+
+                        <div className='column'>
+                            <div className='right-column'>
+                                <h2 id="degree">Data Acquisition</h2>
+                                <p>The McMaster Baja Racing team is a team of students who work to compete in the SAE Baja Series. The team manufactures, designs, and races off road vehicles (think ATVs!) with a focus on mechanical concepts.</p>
+                                
+                                <div className = "experienceList" >
+                                    <p>Tasks accomplished were:</p>
+                                    <ul>
+                                        <li>Manufactured, and assembled off road racing vehicle with a focus on data acquisition, incorporating electronics into design</li>
+                                        <li>Acquired steering column torque data through implementation of strain gauges used to optimize user driving capabilities</li>
+                                        <li>Programmed a dynamometer used to measure primary/secondary CVT RPM with the aim of fine tuning engine parameters</li>
+                                        <li>Machined simple parts from engineering drawing and datasheets using milling machine, lathe, and band saw</li>
+                                        <li>Gained experience using common assembly and measurement tools</li>
+                                    </ul>
+                                </div>
+                                
+                                <div className = 'greenTag'>
+                                    <a href = 'https://mcmasterbaja.ca/' target ='_blank' id='location'><GoLocation /> Hamilton, Ontario &nbsp;&nbsp; || &nbsp;&nbsp;<BiLink size = {20}/>mcmasterbaja.ca </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div id='individualExperiences'>
                         <div className='column'>
@@ -351,6 +480,11 @@ const Section = () => {
                         <div className='skillsLeft'>
                             <div className='skillsHeading'>Programming</div>
                             <ul>
+                                <li>Scripting
+                                    <div className='barContainer'>
+                                        <div className='skillScripting'> &nbsp;</div>
+                                    </div>
+                                </li>
                                 <li>HTML
                                     <div className='barContainer'>
                                         <div className='skillHTML'> &nbsp;</div>
@@ -381,11 +515,6 @@ const Section = () => {
                                         <div className='skillMatlab'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Java
-                                    <div className='barContainer'>
-                                        <div className='skillJava'> &nbsp;</div>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -399,7 +528,7 @@ const Section = () => {
                                         <div className='skillGitHub'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Linux + Bash
+                                <li>UNIX
                                     <div className='barContainer'>
                                         <div className='skillLinuxBash'> &nbsp;</div>
                                     </div>
@@ -456,7 +585,7 @@ const Section = () => {
                                         <div className='skillCAD'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>3D Printing
+                                <li>3D Printing/Modelling
                                     <div className='barContainer'>
                                         <div className='skill3DPrinting'> &nbsp;</div>
                                     </div>
