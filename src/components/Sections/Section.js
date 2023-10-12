@@ -85,7 +85,8 @@ const Section = () => {
                             <p>A robotic arm with fingers controlled via a haptic glove that I designed.</p>
                             <p>This passion project gave me a proper insight into the full project development cycle including protoyping, testing, tuning, and manufacturing.</p>
                             <p>The fingers clench using a fishing line controlled by servo motors, resisted by rubber strings. The haptic glove uses a potentiometer + coiled springs to measure the movement in fingers, which is then mimicked in the respective fingers. </p>
-                            <a href="/RoboticArm+HapticGlove">Learn More</a>
+                            {/* <a href="/RoboticArm+HapticGlove">Learn More</a> */}
+                            <Link to="/RoboticArm+HapticGlove" id = 'externalLinkIcon'>Learn More</Link>
                             
                         </div>
                     </div>
