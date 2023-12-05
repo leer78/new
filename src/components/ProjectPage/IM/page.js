@@ -15,7 +15,7 @@ const IM = () =>{
         <div className="banner">  
             <h1>Ryan Lee - Project Portfolio</h1>
             <div className = "buttons">
-                <Link to="/MacroKeypad" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
+                <Link to="/PID" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
                 <Link to="/" id = 'button'><AiOutlineHome size = {20} color = 'black'/></Link>
                 <Link to="/StrainGaugeSteeringColumn" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
             </div>

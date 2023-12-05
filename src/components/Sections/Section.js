@@ -107,6 +107,18 @@ const Section = () => {
                     </div>
                     <div className = 'box'>
                         <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/PID" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>PID Ball Balancing Platform</h3>
+                        <p>A steel ball balancing platform with 2 degrees of freedom using a PID controller</p>
+                        <ul>
+                            <li>2023</li>
+                            <li>C++</li>
+                            <li>CAD</li>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
                         <Link to="/IronmanHelmet" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
                         <h3>Ironman Helmet </h3>
                         <p>A 3D printed Ironman Helmet with open/close capabilities and LED lights</p>
@@ -135,6 +147,18 @@ const Section = () => {
                             <li>2023</li>
                             <li>CAD</li>
                             <li>3D Printing</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/UselessMachine" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Useless Machine</h3>
+                        <p>A box that switches itself off once turned on..</p>
+                        <ul>
+                            <li>2023</li>
+                            <li>C++</li>
+                            <li>CAD</li>
+                            <li>Circuitry</li>
                         </ul> 
                     </div>
                     <div className = 'box'>

@@ -15,6 +15,8 @@ import IM from "./components/ProjectPage/IM/page";
 import WL from "./components/ProjectPage/WL/page";
 import SGSC from "./components/ProjectPage/SGSC/page";
 import RA from "./components/ProjectPage/RA/page";
+import UB from "./components/ProjectPage/UB/page";
+import PID from "./components/ProjectPage/PID/page";
 
 
 
@@ -112,6 +114,18 @@ class App extends Component {
                            <Fragment>
                               <ScrollToTop/>
                               <RA />
+                           </Fragment>
+                      }> </Route>
+                      <Route path="/UselessMachine" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <UB />
+                           </Fragment>
+                      }> </Route>
+                    <Route path="/PID" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <PID />
                            </Fragment>
                       }> </Route>
         

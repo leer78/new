@@ -17,7 +17,7 @@ const WL = () =>{
             <div className = "buttons">
                 <Link to="/StrainGaugeSteeringColumn" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
                 <Link to="/" id = 'button'><AiOutlineHome size = {20} color = 'black'/></Link>
-                <Link to="/SequentialLogicDigitalDesignProject" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
+                <Link to="/UselessMachine" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
             </div>
         </div>
         <div className="ProjectContainer">
